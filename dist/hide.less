@@ -1,0 +1,85 @@
+//  Global settings
+	@import "../../mixins/includes";
+
+//  ==========================================================================
+//	MODULE STYLES
+//  ==========================================================================
+
+
+
+//  ==========================================================================
+//	MODULE RESPONSIVE STYLES
+//  ==========================================================================
+	
+//	Mobile only styles 
+	.mobile-landscape(){
+		.mob-hide	{
+			display:none;
+		}	
+	}
+	.mobile-portrait(){
+		.mob-p-hide	{
+			display:none;
+		}
+	}
+	.mobile-all(){
+
+	}
+
+//	Tablet only styles
+	.tablet-landscape(){
+		.tab-hide	{
+			display:none;
+		}
+	}
+	.tablet-portrait(){
+		.tab-p-hide	{
+			display:none;
+		}
+	}
+	.tablet-all(){
+
+	}
+
+//	Desktop only styles
+	.desktop(){
+		.desktop-hide	{
+			display:none;
+		}
+	}
+
+//  ==========================================================================
+//	DON'T EDIT BELOW
+//  ==========================================================================
+	.modResMobile(@orientation){
+		.getOrientation(@o) when (@o = landscape){
+			.mobile-landscape();
+		}
+		.getOrientation(@o) when (@o = portrait){
+			.mobile-portrait();
+		}
+		.getOrientation(@orientation);	
+		.mobile-all();
+	}
+	.modResTablet(@orientation){
+		.getOrientation(@o) when (@o = landscape){
+			.tablet-landscape();
+		}
+		.getOrientation(@o) when (@o = portrait){
+			.tablet-portrait();
+		}
+		.getOrientation(@orientation);	
+		.tablet-all();
+	}
+	.modResDesktop(){
+		.desktop();
+	}
+
+	@media @SmartphonesPortraitAndLandscape {.modResMobile(portraitandlandscape);}
+	@media @SmartphonesLandscape            {.modResMobile(landscape);}
+	@media @SmartphonesPortrait             {.modResMobile(portrait);}
+	@media @iPadPortraitAndLandscape        {.modResTablet(portraitandlandscape);}
+	@media @iPadLandscape                   {.modResTablet(landscape);}
+	@media @iPadPortrait                    {.modResTablet(portrait);}
+	@media @DesktopAndLaptop                {.modResDesktop();}
+//  ==========================================================================
