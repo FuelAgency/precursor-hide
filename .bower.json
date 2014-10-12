@@ -1,0 +1,16 @@
+{
+  "name": "precursor-hide",
+  "version": "1.0.0",
+  "homepage": "https://github.com/fuelagency/precursor-hide",
+  "ignore": [
+    ".gitignore",
+    ".gitattributes",
+    ".bower.json",
+    "bower.json"
+  ],
+  "_release": "1.0.0",
+  "_source": "git://github.com/fuelaency/precursor-hide.git",
+  "_target": "~1.0.0",
+  "_originalSource": "precursor-hide",
+  "_direct": true
+}
