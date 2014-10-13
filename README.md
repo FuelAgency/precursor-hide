@@ -14,10 +14,10 @@ One example is to show a large and complex logo for desktop and tablet users als
 
 ## Markup
 ```html
-    &lt;img src=&quot;big-logo.gif&quot; class=&quot;mobile-hide mobile-p-hide&quot;&gt;&lt;/div&gt;
+    <img src="big-logo.gif" class="mobile-hide mobile-p-hide"></div>
 ```
 ```html
-    &lt;img src=&quot;small-logo.gif&quot; class=&quot;desktop-hide tab-hide tab-p-hide&quot;&gt;&lt;/div&gt;
+    <img src="small-logo.gif" class="desktop-hide tab-hide tab-p-hide"></div>
 ```
 
 ## Files
