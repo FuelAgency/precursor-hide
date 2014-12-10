@@ -1,13 +1,19 @@
 {
   "name": "precursor-hide",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "ignore": [
     ".gitignore",
-    ".gitattributes",
-    ".bower.json",
-    "bower.json"
+    ".gitattributes"
+  ],
+  "main": [
+    "hide.less",
+    "hide.css"
   ],
   "keywords": [
-    "precursor"
-  ]
+    "precursor",
+    "hide",
+    "fuel"
+  ],
+  "is_editable": false,
+  "linked_file": "hide.less"
 }
